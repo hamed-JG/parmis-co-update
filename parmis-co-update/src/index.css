@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  direction: rtl;
+  font-family: Vazirmatn, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+:root {
+  --green: #00a03e;
+  --yellow: #FFE869;
+  --blue:#375c95;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

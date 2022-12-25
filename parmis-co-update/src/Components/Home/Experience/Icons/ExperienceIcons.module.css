@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 500px;
+}
+.link {
+  text-decoration: none;
+  margin: 20px;
+  height: 10px;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.5));
+  padding: 10px;
+  border-radius: 15px;
+  width: 90px;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+}
+.icons:hover{
+  transform: scale(1.2);
+}

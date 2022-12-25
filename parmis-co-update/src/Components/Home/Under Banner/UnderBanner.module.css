@@ -1,0 +1,47 @@
+.container {
+  padding: 100px 0;
+}
+.sectionContent {
+  width: 1008px;
+  max-width: 1008px;
+  padding-left: 72px;
+  padding-right: 72px;
+  margin: 0 auto;
+}
+.contentFlexRow{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.textH3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: var(--blue);
+
+}
+.text{
+    text-align: center;
+    font-size: 25px;
+    border-radius: 55px;
+    padding: 10px;
+    color: var(--blue);
+}
+.cta{
+    color: var(--blue);
+    display: inline-block;
+    margin-top: 50px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    transition: all .25s;
+    text-decoration: none;
+}
+.contentText{
+    margin: 0 26px;
+    width: 70%;
+}
