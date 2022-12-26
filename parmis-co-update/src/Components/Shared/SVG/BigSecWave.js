@@ -1,6 +1,6 @@
 import React from "react";
 
-function ExpWave() {
+function BigSecWave() {
   return (
     <svg
       style={{
@@ -20,13 +20,13 @@ function ExpWave() {
         width="1152"
         height="100%"
         fill="#ffffff"
-        clipPath="url(#expertise-top-clip)"
+        clipPath="url(#featured-solutions-top-clip)"
       ></rect>
-      <clipPath id="expertise-top-clip">
+      <clipPath id="featured-solutions-top-clip">
         <path
           id="Path_18"
           data-name="Path 18"
-          d="m 1152 17.8 c -60 137.2 -804 -112.8 -1152 35.4 v -52.85 H 1152 Z"
+          d="M 1152 17.8 c 0 -68.1 -1152 88.8 -1152 35.4 v -52.85 H 1152 Z"
           fill="#ffffff"
         ></path>
       </clipPath>
@@ -34,4 +34,4 @@ function ExpWave() {
   );
 }
 
-export default ExpWave;
+export default BigSecWave;

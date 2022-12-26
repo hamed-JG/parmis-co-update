@@ -1,32 +1,32 @@
 import React from "react";
 
-function ExpWave() {
+function ExpWave1() {
   return (
     <svg
       style={{
         position: "absolute",
-        top: "-1px",
+        bottom: "0",
         left: "0",
         width: "100%",
-        height: "65px",
+        height: "56px",
       }}
       xmlns="http://www.w3.org/2000/svg"
       width="1152"
-      height="65"
-      viewBox="0 0 1152 65"
+      height="56"
+      viewBox="0 0 1152 56"
       preserveAspectRatio="none"
     >
       <rect
         width="1152"
         height="100%"
         fill="#ffffff"
-        clipPath="url(#expertise-top-clip)"
+        clipPath="url(#expertise-bottom-clip)"
       ></rect>
-      <clipPath id="expertise-top-clip">
+      <clipPath id="expertise-bottom-clip">
         <path
-          id="Path_18"
-          data-name="Path 18"
-          d="m 1152 17.8 c -60 137.2 -804 -112.8 -1152 35.4 v -52.85 H 1152 Z"
+          id="expertise-bottom-path"
+          data-name="expertise-bottom-path"
+          d="M 1152 56 H 0 v -5 c 385 -114 1010 93 1152 -50.5 Z"
           fill="#ffffff"
         ></path>
       </clipPath>
@@ -34,4 +34,4 @@ function ExpWave() {
   );
 }
 
-export default ExpWave;
+export default ExpWave1;

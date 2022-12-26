@@ -4,17 +4,23 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  height: 85vh;
-  min-height: 650px;
+  height:fit-content;
   padding-top: 114px;
   padding-bottom: 158px;
   display: flex;
   justify-content: center;
+  position: relative;
   padding: 150px;
   margin: 0 auto;
 }
-.content{
+.content {
   display: flex;
   flex-direction: column;
   width: 50%;
+}
+.content h2 {
+  color: var(--blue);
+  font-weight: 500;
+  margin-bottom: 30px;
+  font-size: 30px;
 }

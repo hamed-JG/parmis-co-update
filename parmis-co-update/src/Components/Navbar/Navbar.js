@@ -7,26 +7,23 @@ import "./Navbar.module.css";
 import style from "./Navbar.module.css";
 
 function Navbar() {
-
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-
     <div className={style.container}>
-        
       <nav>
         <ul className={style.menuList}>
           <li className={style.link}>
             <Link to={"/"}>صفحه نخست</Link>
           </li>
           <li className={style.link}>
-            <Link to={"/products"}>محصولات</Link>
+            <Link to={"/services"}>درباره ما</Link>
+          </li>
+          <li className={style.link}>
+            <Link to={"/products"}>تجهیزات</Link>
           </li>
           <li className={style.link}>
             <Link to={"/blogs"}>مقالات</Link>
-          </li>
-          <li className={style.link}>
-            <Link to={"/services"}>خدمات ما</Link>
           </li>
           <li className={style.link}>
             <Link to={"/contactUs"}>تماس با ما</Link>

@@ -9,16 +9,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
+  justify-content: center;
   padding-top: 60px;
 }
 .content {
-  width: 1008px;
-  height: 100%;
-  max-width: 1008px;
-  padding: 0 92px;
-  margin: 5px 300px;
-  color: #375c95;
-  position: relative;
+  color: var(--blue);
   z-index: 2;
   display: flex;
   flex-direction: column;

@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  padding:100px 0;
+  position: relative;
+  background-color: #c4e7e4;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.rowFlex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.content {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+}
+.cover img {
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+
+}
