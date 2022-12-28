@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+.header {
+  width: 100%;
+  padding: 10px 0;
+}
+.header h2 {
+  text-align: center;
+  font-size: 30px;
+  color: var(--blue);
+}
+.cardHolder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

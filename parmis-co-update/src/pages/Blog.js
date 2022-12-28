@@ -1,8 +1,11 @@
 import React from 'react'
+import ABlog from '../Components/Blog/a Blog/ABlog'
 
 function Blog() {
   return (
-    <div>Blog</div>
+    <div>
+      <ABlog/>
+    </div>
   )
 }
 

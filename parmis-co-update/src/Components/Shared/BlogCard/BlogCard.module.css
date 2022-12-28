@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 10px 0px rgba(117, 117, 117, 0.3);
+}
+.Content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 20px;
+}
+.titleText {
+  color: var(--blue);
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  cursor: pointer;
+  text-align: justify;
+}
+.cardCover {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 330px;
+  height: 200px;
+}
+.author {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.avatar {
+  width: 35px;
+  height: 35px;
+}
+.date {
+  opacity: 0.5;
+  padding: 5px 20px;
+  font-size: 13px;
+  text-align: justify;
+}
+.button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  text-align: right;
+}
+.button:active {
+  position: relative;
+  top: 1px;
+}
+.container a {
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
