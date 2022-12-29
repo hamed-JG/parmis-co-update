@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+}
+.header {
+  font-size: 30px;
+  color: var(--blue);
+  filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.329));
+  padding: 50px;
+}
+.icons {
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.icon {
+  width: 200px;
+  text-align: center;
+  margin: 30px 10px;
+  color: var(--blue);
+}
+.icon h3 {
+  font-size: 30px;
+}

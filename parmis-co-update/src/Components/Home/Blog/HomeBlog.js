@@ -4,7 +4,7 @@ import { GET_BLOGS_INFO } from "../../../graphql/queries";
 
 // Components
 import BlogCard from "../../Shared/BlogCard/BlogCard";
-import LoadingSpinner from "../../Shared/LoadingSpinner";
+import LoadingSpinner from "../../Shared/Tools/LoadingSpinner";
 
 // Style
 import "./HomeBlog.module.css"

@@ -3,14 +3,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Components
 import Home from "./pages/Home";
-import Services from "./pages/Services";
+import AboutUs from "./pages/AboutUs";
 import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./Components/Shared/Navbar/Navbar";
+import Footer from "./Components/Shared/Footer/Footer";
 
-import ScrollToTop from "./Components/Shared/ScrollToTop";
+import ScrollToTop from "./Components/Shared/Tools/ScrollToTop";
 
 
 // Styles
@@ -30,18 +31,16 @@ function App() {
           <Routes>
               <Route path="/" element={<Home />} />
 
-              <Route path="/services" element={<Services />} />
+              <Route path="/aboutUs" element={<AboutUs />} />
 
               <Route path="/products" element={<Products />} />
-
-              {/* <Route path="/blogs" element={<Blogs />} /> */}
 
               <Route path="/blogs/:slug" element={<Blog />} />
 
               <Route path="/contact" element={<Contact />} />
           </Routes>
 
-          {/* <Footer /> */}
+          <Footer />
 
       </Router>
 
