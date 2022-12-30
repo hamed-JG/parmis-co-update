@@ -7,7 +7,7 @@ import sanitizeHtml from "sanitize-html";
 import "./ABlog.module.css";
 import style from "./ABlog.module.css";
 
-// import LoadingSpinner from "../shared/LoadingSpinner";
+import LoadingSpinner from "../../Shared/Tools/LoadingSpinner";
 // import CommentsForm from "./comment/From/CommentsForm";
 // import Comments from "./comment/comments/Comments";
 
@@ -19,9 +19,9 @@ function ABlog() {
   const { loading, data, errors } = useQuery(GET_POST_INFO, {
     variables: { slug },
   });
-//   if (loading) return <LoadingSpinner />;
+  if (loading) return <LoadingSpinner />;
 
-//   if (errors) return <h2>errors...</h2>;
+  if (errors) return <h2>errors...</h2>;
 
   return (
     <div className={style.container}>
@@ -48,7 +48,7 @@ function ABlog() {
             alt="profile"
           />
 
-          <div>
+          <div className={style.text}>
             <h3>{data.post.author.name}</h3>
             <span>{data.post.author.field}</span>
           </div>

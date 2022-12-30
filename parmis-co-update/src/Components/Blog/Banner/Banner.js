@@ -7,18 +7,14 @@ import Wave from "../../Shared/SVG/about us page/Wave";
 import "./Banner.module.css";
 import style from "./Banner.module.css";
 
-
 function Banner() {
   return (
     <div className={style.container}>
       <Wave />
       <div className={style.layer}>
         <div className={style.content}>
-          <h2>درباره تیم ما</h2>
-          <p>
-            نواندیش پارمیس ارائه دهنده راه حل های جهانی و توسعه دهنده پروژه های گلخانه گاتیک
-             برای پیشرفت کشاورزی و امنیت غذایی پیشرفته است.
-          </p>
+          <h2>مقالات</h2>
+          <p>نقاط عطف کسب و کار، نوآوری های تکنولوژیکی و نکات آموزشی  </p>
         </div>
       </div>
     </div>

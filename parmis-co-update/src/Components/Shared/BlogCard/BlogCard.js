@@ -13,12 +13,12 @@ const BlogCard = ({ title, coverPhoto, author, datePublished, slug }) => {
       <span className={style.date}>{datePublished}</span>
 
       <div className={style.Content}>
-        <Link to={`/blogs/${slug}`}>
+        <Link to={`/blog/${slug}`}>
           <span className={style.titleText}>{title}</span>
         </Link>
       </div>
 
-      <Link to={`/blogs/${slug}`}>
+      <Link to={`/blog/${slug}`}>
         <div className={style.button}>
           بیشتر
           <FaAngleLeft />

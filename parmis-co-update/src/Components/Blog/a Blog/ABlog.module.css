@@ -1,0 +1,78 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding: 40px 0;
+}
+.headerTitle {
+  font-size: 20px;
+}
+.backBtn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.backBtn span {
+  padding: 0 10px;
+}
+.coverPhoto {
+  width: 1000px;
+  max-width: 1000px;
+  max-height: 600px;
+  border-radius: 16px;
+}
+.authorHolder {
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px 0;
+}
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.avatar {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.headerTitle1 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  width: 1000px;
+  text-align: right;
+  padding: 20px 0;
+}
+.contentHolder {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 20px;
+}
+.contentHolder p {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .coverPhoto {
+    width: 500px;
+    height: 250px;
+  }
+}

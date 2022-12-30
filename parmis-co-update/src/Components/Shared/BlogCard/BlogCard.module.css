@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   margin: 15px;
-  border-radius: 20px;
+  border-radius: 5px;
   box-shadow: 0px 10px 10px 0px rgba(117, 117, 117, 0.3);
 }
 .Content {
@@ -21,8 +21,8 @@
   text-align: justify;
 }
 .cardCover {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   width: 330px;
   height: 200px;
 }

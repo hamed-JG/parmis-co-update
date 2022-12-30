@@ -19,11 +19,11 @@ function Navbar() {
           <li className={style.link}>
             <Link to={"/aboutUs"}>درباره ما</Link>
           </li>
-          <li className={style.link}>
+          {/* <li className={style.link}>
             <Link to={"/products"}>تجهیزات</Link>
-          </li>
+          </li> */}
           <li className={style.link}>
-            <Link to={"/blogs"}>مقالات</Link>
+            <Link to={"/blog"}>مقالات</Link>
           </li>
           <li className={style.link}>
             <Link to={"/contactUs"}>تماس با ما</Link>
@@ -51,7 +51,7 @@ function Navbar() {
               </Link>
             </li>
             <li className={style.link}>
-              <Link to={"/blogs"} onClick={() => setShowMenu(false)}>
+              <Link to={"/blog"} onClick={() => setShowMenu(false)}>
                 مقالات
               </Link>
             </li>
