@@ -6,6 +6,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
 }
+link{
+  text-decoration: none;
+  color: black;
+}
 :root {
   --green: #00a03e;
   --yellow: #FFE869;

@@ -26,7 +26,7 @@ function Navbar() {
             <Link to={"/blog"}>مقالات</Link>
           </li>
           <li className={style.link}>
-            <Link to={"/contactUs"}>تماس با ما</Link>
+            <Link to={"/contact"}>تماس با ما</Link>
           </li>
         </ul>
       </nav>
@@ -45,9 +45,14 @@ function Navbar() {
                 صفحه نخست
               </Link>
             </li>
-            <li className={style.link}>
+            {/* <li className={style.link}>
               <Link to={"/products"} onClick={() => setShowMenu(false)}>
                 محصولات
+              </Link>
+            </li> */}
+            <li className={style.link}>
+              <Link to={"/aboutUs"} onClick={() => setShowMenu(false)}>
+                درباره ما
               </Link>
             </li>
             <li className={style.link}>
@@ -56,12 +61,7 @@ function Navbar() {
               </Link>
             </li>
             <li className={style.link}>
-              <Link to={"/services"} onClick={() => setShowMenu(false)}>
-                خدمات ما
-              </Link>
-            </li>
-            <li className={style.link}>
-              <Link to={"/contactUs"} onClick={() => setShowMenu(false)}>
+              <Link to={"/contact"} onClick={() => setShowMenu(false)}>
                 تماس با ما
               </Link>
             </li>

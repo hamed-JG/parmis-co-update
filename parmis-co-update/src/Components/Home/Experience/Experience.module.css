@@ -5,9 +5,8 @@
   background-repeat: no-repeat;
   background-position: top center;
   height:fit-content;
-  padding-top: 114px;
-  padding-bottom: 158px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   position: relative;
   padding: 150px;
@@ -23,4 +22,14 @@
   font-weight: 500;
   margin-bottom: 30px;
   font-size: 30px;
+}
+
+@media (max-width:768px){
+  .container{
+    padding: 70px 0;
+    text-align: center;
+  }
+  .content{
+    width: 300px;
+  }
 }

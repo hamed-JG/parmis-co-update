@@ -59,3 +59,10 @@
   text-decoration: none;
   color: black;
 }
+
+
+@media(max-width:768px){
+  .container{
+    margin: 15px 0;
+  }
+}

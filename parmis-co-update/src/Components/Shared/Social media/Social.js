@@ -16,9 +16,7 @@ function Social() {
 
       <FaWhatsapp style={{ margin: "10px", width: "25px", height: "25px" }} />
       <FaInstagram style={{ margin: "10px", width: "25px", height: "25px" }} />
-      <FaTelegramPlane
-        style={{ margin: "10px", width: "25px", height: "25px" }}
-      />
+      <FaTelegramPlane style={{ margin: "10px", width: "25px", height: "25px" }}/>
       <FaLinkedinIn style={{ margin: "10px", width: "25px", height: "25px" }} />
       
     </div>

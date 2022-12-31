@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  max-width: 400px;
+  max-height: 450px;
+  border: 0.5px solid rgba(128, 128, 128, 0.5);
+  padding: 20px;
+}
+.header {
+    margin: 0;
+}
+
+.part div {
+  padding: 5px;
+}
+.part h4{
+  color: var(--blue);
+  text-decoration: underline;
+}
+.openMap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px;
+  background-color: var(--blue);
+  color: #fff;
+}

@@ -8,10 +8,9 @@ import style from "./UnderBanner.module.css";
 function UnderBanner() {
   return (
     <section className={style.container}>
-      <div className={style.sectionContent}>
         <div className={style.contentFlexRow}>
           <div>
-            <h3 className={style.textH3}>
+            <div className={style.boldText}>
               <span>
                 گلخانه سازان نواندیش پارمیس ارائه دهنده راه‌حل ها و توسعه دهنده
                 پروژه های کشاورزی گلخانه‌ای در سراسر ایران و کشورهای همسایه است.
@@ -21,7 +20,7 @@ function UnderBanner() {
               <span className={style.text}>
                 کشاورزی گلخانه‌ای را کاملا می‌شناسیم
               </span>
-            </h3>
+            </div>
             <div>
               <Link to={"/"} className={style.cta}>
                 <div>
@@ -47,7 +46,6 @@ function UnderBanner() {
               تیم ما امکانات جدیدی برای کشاورزی ایجاد می‌کند.
             </p>
           </div>
-        </div>
       </div>
     </section>
   );

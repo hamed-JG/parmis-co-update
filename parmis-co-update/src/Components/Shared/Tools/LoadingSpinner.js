@@ -8,14 +8,14 @@ function LoadingSpinner() {
         width: "100%",
         height: "1000px",
         justifyContent: "center",
-        paddingTop: "20px",
+        paddingTop: "200px",
       }}
     >
       <ThreeDots
         height="80"
         width="80"
         radius="9"
-        color="#00000"
+        color="#375c95"
         ariaLabel="three-dots-loading"
         wrapperStyle={{}}
         wrapperClassName=""

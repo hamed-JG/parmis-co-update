@@ -1,7 +1,5 @@
 import React from "react";
 
-import Footer from "../Components/Shared/Footer/Footer";
-import CallToAction from "../Components/Shared/Call to action/CallToAction";
 import Banner from "../Components/About Us/Banner/Banner";
 import Vision from "../Components/About Us/OurVision/Vision";
 import Service from "../Components/About Us/OurServices/Service";
@@ -20,9 +18,6 @@ function Services() {
 
       <InstaBar text={text} />
 
-      <CallToAction />
-
-      <Footer />
     </div>
   );
 }

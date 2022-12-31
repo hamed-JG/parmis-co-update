@@ -13,6 +13,7 @@
 .icons {
   max-width: 900px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .icon {
@@ -23,4 +24,9 @@
 }
 .icon h3 {
   font-size: 30px;
+}
+@media (max-width:768px){
+  .container{
+    padding: 0;
+  }
 }

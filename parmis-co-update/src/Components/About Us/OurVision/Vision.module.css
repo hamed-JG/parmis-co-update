@@ -50,6 +50,13 @@
   font-weight: 600;
 }
 .visionTitr {
+  padding: 20px;
   font-size: 25px;
   color: var(--blue);
+}
+
+@media (max-width:768px){
+  .containe{
+    text-align: center;
+  }
 }

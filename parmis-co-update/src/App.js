@@ -11,6 +11,7 @@ import ABlog from "./Components/Blog/a Blog/ABlog";
 
 import Navbar from "./Components/Shared/Navbar/Navbar";
 import Footer from "./Components/Shared/Footer/Footer";
+import CallToAction from './Components/Shared/Call to action/CallToAction'
 
 import ScrollToTop from "./Components/Shared/Tools/ScrollToTop";
 
@@ -40,6 +41,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
 
+        <CallToAction/>
         <Footer />
       </Router>
     </div>
