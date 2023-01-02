@@ -1,0 +1,152 @@
+.container {
+  background: url(../../../Images/material.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-color: var(--Yellow);
+  height: max-content;
+  padding: 20px;
+  margin: 15px 0;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.25));
+  padding: 0 15px 10px 0;
+  margin-bottom: 50px;
+}
+.header img {
+  filter: drop-shadow(10px 2px 3px rgba(128, 128, 128, 0.459));
+  width: 50px;
+  margin: 0 15px;
+}
+
+.galleryWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  max-width: 2000px;
+  margin: 50px auto;
+}
+.galleryWrap .single {
+  width: 200px;
+  cursor: pointer;
+}
+.galleryWrap .single {
+  width: 250px;
+  height: 150px;
+}
+.galleryWrap .single img:hover {
+  transform: scale(1.02);
+}
+
+.sliderWrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.sliderWrap .btnClose,
+.sliderWrap .btnPrev,
+.sliderWrap .btnNext {
+  position: fixed;
+  cursor: pointer;
+  opacity: 0.6;
+  color: #fff;
+  z-index: 9999;
+}
+.btnClose:hover,
+.btnPrev:hover,
+.btnNext:hover {
+  opacity: 1;
+}
+.sliderWrap .btnClose {
+  width: 80px;
+  height: 40px;
+  top: 40px;
+  right: 40px;
+}
+.sliderWrap .btnPrev {
+  width: 80px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+}
+.sliderWrap .btnNext {
+  width: 80px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
+}
+.fullScreen {
+  width: calc(90% - 40px);
+  height: calc(80% - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fullScreen img {
+  width: 85%;
+  height: 85%;
+  max-width: 100%;
+  max-height: 100%;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.title {
+  position: absolute;
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.4;
+  width: 300px;
+}
+@media (max-width: 768px) {
+  .header {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .fullScreen {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sliderWrap .btnClose {
+    color: #fff;
+    width: 80px;
+    height: 40px;
+    top: 4px;
+    right: 4px;
+  }
+  .sliderWrap .btnPrev {
+    color: #fff;
+    width: 80px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+  }
+  .sliderWrap .btnNext {
+    width: 80px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+}
