@@ -1,5 +1,5 @@
 .container {
-  background: url(../../../Images/ExperiencePattern.jpg);
+  background: url(../../../Images/material.jpg);
   background-color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,11 +11,13 @@
   position: relative;
   padding: 150px;
   margin: 0 auto;
+  text-align: justify;
 }
 .content {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
+  text-align: justify;
 }
 .content h2 {
   color: var(--blue);

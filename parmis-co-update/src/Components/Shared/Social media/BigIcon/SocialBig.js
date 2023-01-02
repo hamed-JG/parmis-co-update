@@ -12,23 +12,30 @@ import {
 import "./SocialBig.module.css";
 import style from "./SocialBig.module.css";
 
+const whatsApp = () => {
+  window.open("https://wa.me/message/LDCG2QSPOTNVF1");
+};
+
+const instagram = () => {
+  window.open("https://instagram.com/kgnparmis?igshid=YmMyMTA2M2Y=");
+};
+const telegram = () => {
+  window.open("https://t.me/Kgnparmis_bot");
+};
+const linkedIn = () => {
+  window.open("https://www.linkedin.com/in/hamed-jahangiri-908643216");
+};
+
+
 function SocialBig() {
   return (
     <div className={style.container}>
       <h2>در فضای مجازی صفحات ما را دنبال کنید</h2>
       <div className={style.icons}>
-        <Link>
-          <FaWhatsapp className={style.icon} />
-        </Link>
-        <Link>
-          <FaInstagram className={style.icon}/>
-        </Link>
-        <Link>
-          <FaTelegramPlane className={style.icon}/>
-        </Link>
-        <Link>
-          <FaLinkedinIn className={style.icon}/>
-        </Link>
+      <FaWhatsapp onClick={whatsApp} className={style.icon} />
+      <FaInstagram onClick={instagram} className={style.icon} />
+      <FaTelegramPlane onClick={telegram} className={style.icon} />
+      <FaLinkedinIn onClick={linkedIn} className={style.icon} />
       </div>
     </div>
   );

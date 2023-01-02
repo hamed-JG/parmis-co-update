@@ -4,7 +4,7 @@ import React from "react";
 import "./Certificates.module.css";
 import style from "./Certificates.module.css";
 import certificate from "../../../Images/certificate.jpg";
-import Certificate from "./Certificate.js";
+import Certificate from "./ourCertificate/Certificate.js";
 function Certificates() {
   return (
     <div className={style.container}>
@@ -12,13 +12,15 @@ function Certificates() {
 
         <div className={style.rowFlex}>
 
-        <Certificate image={certificate}/>
+        <Certificate image={certificate} title={"گواهینامه EPCS"}/>
 
-        <Certificate image={certificate}/>
+        <Certificate image={certificate} title={"گواهینامه انجمن گلخانه سازان کشور"}/>
 
-        <Certificate image={certificate}/>
+        <Certificate image={certificate} title={"گواهینامه توزیع نهاده‌های کشاورزی"}/>
 
-        <Certificate image={certificate}/>
+        <Certificate image={certificate} title={"گواهینامه تولید محصولات گلخانه‌ای"}/>
+        
+        <Certificate image={certificate} title={"گواهینامه تولید محصولات گلخانه‌ای"}/>
 
         </div>
 

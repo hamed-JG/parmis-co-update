@@ -8,9 +8,9 @@ function Banner() {
   return (
     <section className={style.container}>
       <div className={style.content}>
-        <h1>گلخانه سازان نواندیش پارمیس</h1>
+        <h1>شرکت مهندسی کشاورزی گلخانه سازان نواندیش پارمیس</h1>
         <h2>راهکاری نوین برای پیشرفت کشاورزی</h2>
-        <Link to={"/"} className={style.cta}>
+        <Link to={"/aboutUs"} className={style.cta}>
           درباره راهکار‌ها بیشتر بدانید
         </Link>
       </div>

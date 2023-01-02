@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 // Style
 import "./Section.module.css";
 import style from "./Section.module.css";
@@ -12,8 +12,12 @@ function Section({ rowAlign, image, title, text, altText }) {
       </div>
       <div className={style.content}>
         <h2>{title}</h2>
-        <p>{text}</p>
-        <p>{altText}</p>
+        <p>{text}
+        <Link to={"/blog/spanish-greenhouse"}>
+        مقالات مرتبط
+        </Link></p>
+        <p>{altText}
+        </p>
       </div>
     </div>
   );

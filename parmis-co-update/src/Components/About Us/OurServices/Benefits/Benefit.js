@@ -4,14 +4,15 @@ import React from "react";
 import "./Benefit.module.css";
 import style from "./Benefit.module.css";
 import {
-  FaRegCalendarAlt,
-  FaRainbow,
-  FaTasks,
-  FaMale,
-  FaGem,
-  FaSpa,
+  FaCalendar,
+  FaCheckSquare,
+  FaListAlt,
+  FaIdCard,
+  FaEnvira,
   FaBuilding,
-  FaCheck,
+  FaWhmcs,
+  FaSketch
+  
 } from "react-icons/fa";
 function Benefit() {
   return (
@@ -19,68 +20,68 @@ function Benefit() {
       <h2 className={style.header}>فعالیت ما در یک نگاه</h2>
       <div className={style.icons}>
         <div className={style.icon}>
-          <FaRegCalendarAlt
-            style={{ width: "70px", height: "70px", color: "#375c95" }}
+          <FaCalendar
+            style={{ width: "60px", height: "60px", color: "#375c95" }}
           />
-          <div>
-            <h3>30</h3>
+          <div className={style.text}>
+            <h5>30</h5>
             <span>سال‌های فعالیت در زمینه کشاورزی</span>
           </div>
         </div>
         <div className={style.icon}>
-          <FaRainbow
-            style={{ width: "70px", height: "70px", color: "#375c95" }}
+          <FaCheckSquare
+            style={{ width: "60px", height: "60px", color: "#375c95" }}
           />
-          <div>
-            <h3>1000</h3>
+          <div className={style.text}>
+            <h5>100+</h5>
             <span>پروژه‌های موفق اجرا شده</span>
           </div>
         </div>
         <div className={style.icon}>
-          <FaMale style={{ width: "70px", height: "70px", color: "#375c95" }} />
-          <div>
-            <h3>100</h3>
+          <FaIdCard style={{ width: "60px", height: "60px", color: "#375c95" }} />
+          <div className={style.text}>
+            <h5>100</h5>
             <span>افراد مشغول به همکاری</span>
           </div>
         </div>
         <div className={style.icon}>
-          <FaTasks
-            style={{ width: "70px", height: "70px", color: "#375c95" }}
+          <FaListAlt
+            style={{ width: "60px", height: "60px", color: "#375c95" }}
           />
-          <div>
-            <h3>1000+</h3>
+          <div className={style.text}>
+            <h5>1000+</h5>
             <span>راهکارهای به روز برای ارتقا</span>
           </div>
         </div>
         <div className={style.icon}>
-          <FaSpa style={{ width: "70px", height: "70px", color: "#375c95" }} />
-          <div>
-            <h3>4</h3>
-            <span>تعداد گلخانه‌های فعال</span>
+          <FaEnvira style={{ width: "60px", height: "60px", color: "#375c95" }} />
+          <div className={style.text}>
+            <h5>4</h5>
+            <span>تعداد گلخانه‌های فعال مجموعه</span>
           </div>
         </div>
         <div className={style.icon}>
           <FaBuilding
-            style={{ width: "70px", height: "70px", color: "#375c95" }}
+            style={{ width: "60px", height: "60px", color: "#375c95" }}
           />
-          <div>
-            <h3>2</h3>
+          <div className={style.text}>
+            <h5>2</h5>
             <span>تعداد دفاتر فعال</span>
           </div>
         </div>
         <div className={style.icon}>
-          <FaGem style={{ width: "70px", height: "70px", color: "#375c95" }} />
-          <div>
-            <h3>10+</h3>
+          <FaSketch style={{ width: "60px", height: "60px", color: "#375c95" }} />
+          <div className={style.text}>
+            <h5>10+</h5>
             <span>گواهینامه ها و افتخارات</span>
           </div>
         </div>
         <div className={style.icon}>
-          <FaCheck
-            style={{ width: "70px", height: "70px", color: "#375c95" }}
+          <FaWhmcs
+            style={{ width: "60px", height: "60px", color: "#375c95" }}
           />
-          <div>
-            <h3>7</h3>
+          <div className={style.text}>
+            <h5>7</h5>
             <span>تولیدات ملی مورد استفاده</span>
           </div>
         </div>

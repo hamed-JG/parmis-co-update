@@ -12,12 +12,13 @@
   border-radius: 5px;
 }
 .content {
+  text-align: justify;
   max-width: 500px;
 }
 
 @media (max-width: 768px) {
   .container{
-    text-align: center;
+    text-align: justify;
   }
   .content{
     padding: 20px;

@@ -8,12 +8,18 @@ import "./ABlog.module.css";
 import style from "./ABlog.module.css";
 
 import LoadingSpinner from "../../Shared/Tools/LoadingSpinner";
+import InstaBar from "../../Shared/Instagram/InstaBar";
 // import CommentsForm from "./comment/From/CommentsForm";
 // import Comments from "./comment/comments/Comments";
 
+const instaText = `
+
+ما را در اینستاگرام دنبال کنید تا اولین کسی باشید که از آخرین اخبار و رویدادهای یک صنعت مطلع می شود
+`;
+
 function ABlog() {
   const { slug } = useParams();
-  console.log(slug)
+  console.log(slug);
   const navigate = useNavigate();
 
   const { loading, data, errors } = useQuery(GET_POST_INFO, {
@@ -67,6 +73,7 @@ function ABlog() {
       {/* <CommentsForm slug={slug} />
 
       <Comments slug={slug} /> */}
+      <InstaBar text={instaText} />
     </div>
   );
 }

@@ -15,7 +15,7 @@ function ContactForm() {
         </div>
         <div className={style.row}>
           <input placeholder="شماره همراه" />
-          <input placeholder="شغل" />
+          <input placeholder="شهر" />
         </div>
         <div className={style.row}>
           <textarea placeholder="پیام شما"></textarea>

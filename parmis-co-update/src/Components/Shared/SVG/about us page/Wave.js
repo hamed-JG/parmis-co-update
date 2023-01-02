@@ -5,9 +5,9 @@ function Wave() {
     <svg
     style={{
         position: "absolute",
-        bottom: "0px",
+        bottom: "-2",
         width: "100%",
-        height: "64px",
+        height: "65px",
         zIndex: "4",
     }}
       xmlns="http://www.w3.org/2000/svg"

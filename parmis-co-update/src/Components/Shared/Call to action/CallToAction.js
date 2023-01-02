@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Components
 import BigBackgroundWave from "../SVG/BigBackgroundWave";
@@ -20,7 +21,10 @@ function BigBackground() {
             دیدگاه ها و تخصص ما را برای یافتن بهترین راه حل برای چالش‌های
             کشاورزی شما به اشتراک بگذارد.
           </p>
+          <Link to={"/contact"}>
+          
           <span className={style.cta}>تماس با کارشناسان</span>
+          </Link>
         </div>
       </div>
     </div>

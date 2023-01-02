@@ -5,7 +5,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 150px 0;
+  padding: 100px 0;
+}
+.container h2{
+  margin: 40px;
 }
 .rowFlex{
   display: flex;

@@ -2,3 +2,8 @@
   display: flex;
   justify-content: center;
 }
+.icon{
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+}

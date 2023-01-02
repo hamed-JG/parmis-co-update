@@ -5,7 +5,7 @@ function BigBackgroundWave() {
     <svg
       style={{
         position: "absolute",
-        top: "-1px",
+        top: "-2px",
         left: "0",
         width: "101%",
         height: "45px",

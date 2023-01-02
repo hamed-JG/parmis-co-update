@@ -6,32 +6,36 @@
 
 .contentFlexRow {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-
+  flex-wrap: wrap;
 }
 
 .boldText {
-  font-size: 1.17em;
+  text-align: justify;
+  padding: 20px;
+  border-radius: 40px;
+  font-size: 18px;
   font-weight: bold;
   color: var(--blue);
   width: 500px;
-
+  border: 1px solid var(--yellow);
+  box-shadow: 0 5px 10px var(--yellow);
 }
 .text {
   text-align: center;
   font-size: 25px;
   border-radius: 55px;
-  padding: 10px;
   color: var(--blue);
+  filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.2));
 }
 .contentText {
-  margin: 0 26px;
+  margin-right: 50px;
   width: 500px;
+  text-align: justify;
 }
 .cta {
-  color: var(--blue);
+  color: var(--green);
+  filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.2));
   display: inline-block;
   margin-top: 50px;
   padding: 15px 30px;
@@ -41,14 +45,24 @@
 }
 
 @media (max-width: 768px) {
+  .container{
+    padding: 50px 0;
+  }
   .contentFlexRow {
     flex-direction: column;
+  }
+  .contentText {
+    width: 300px;
+    margin: 40px auto;
+
+  }
+  .boldText {
+    text-align: justify;
+    width: 270px;
+    margin: 0 auto;
+  }
+  .text {
+    font-size: 20px;
     text-align: center;
-  }
-  .contentText{
-    width: 300px;
-  }
-  .boldText{
-    width: 300px;
   }
 }

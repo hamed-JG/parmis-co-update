@@ -23,7 +23,7 @@ import care from "../../../Images/care.jpeg"
 function Service() {
   return (
     <div>
-      <h2 className={style.header}>خدمات اصلی</h2>
+      <h2 id="solutions" className={style.header}>خدمات اصلی</h2>
 
       <Section image={Structure} rowAlign={{ flexDirection: "row" }} title={firstTitle} text={firstText} altText={firstAlt}/>
 
