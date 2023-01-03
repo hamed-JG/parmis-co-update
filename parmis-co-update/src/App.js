@@ -8,6 +8,7 @@ import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import ABlog from "./Components/Blog/a Blog/ABlog";
+import Gallery from "./Components/Gallery/Gallery";
 
 import Navbar from "./Components/Shared/Navbar/Navbar";
 import Footer from "./Components/Shared/Footer/Footer";
@@ -39,6 +40,8 @@ function App() {
           <Route path="/blog/:slug" element={<ABlog />} />
 
           <Route path="/contact" element={<Contact />} />
+
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
 
         <CallToAction/>

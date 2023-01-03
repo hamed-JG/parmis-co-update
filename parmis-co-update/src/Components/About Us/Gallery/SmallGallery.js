@@ -4,19 +4,21 @@ import { useQuery } from "@apollo/client";
 import { GET_GALLERY_PHOTO } from "../../../graphql/queries";
 
 // style & img
-import "./Gallery.module.css";
-import style from "./Gallery.module.css";
+import "./SmallGallery.module.css";
+import style from "./SmallGallery.module.css";
 import { FaChevronLeft, FaChevronRight, FaTimes } from "react-icons/fa";
 
 // components
 import LoadingSpinner from "../../Shared/Tools/LoadingSpinner";
-import Wave from '../../Shared/SVG/BigBackgroundWave'
-import BigSecWave1 from '../../Shared/SVG/BigSecWave1'
+import Wave from "../../Shared/SVG/BigBackgroundWave";
+import BigSecWave1 from "../../Shared/SVG/BigSecWave1";
+import { Link } from "react-router-dom";
 
 const Gallery = () => {
   const { loading, data, error } = useQuery(GET_GALLERY_PHOTO);
   console.log(data);
   const [slideNumber, setSlideNumber] = useState(0);
+  const [morePic, setMorePic] = useState(false);
   const [openModal, setOpenModal] = useState(false);
 
   const handleOpenModal = (index) => {
@@ -43,11 +45,17 @@ const Gallery = () => {
       : setSlideNumber(slideNumber + 1);
   };
 
+  // More Image
+  const moreImage = () => {
+    setMorePic(!morePic);
+  };
+
   if (loading) return <LoadingSpinner />;
   if (error) return <div> error... </div>;
   return (
     <div className={style.container}>
-      <Wave/>
+      <Wave />
+
       <h2 className={style.header}>گالری تصاویر</h2>
       {openModal && (
         <div className={style.sliderWrap}>
@@ -67,21 +75,25 @@ const Gallery = () => {
       )}
 
       <div className={style.galleryWrap}>
-        {data &&
-          data.galleries.map((slide, index) => {
-            console.log(slide)
-            return (
-              <img
-                src={slide.photo.url}
-                className={style.single}
-                key={index}
-                onClick={() => handleOpenModal(index)}
-                alt=""
-              ></img>
-            );
-          })}
+        {data.galleries.slice(0, 12).map((slide, index) => {
+          return (
+            <img
+              src={slide.photo.url}
+              className={style.single}
+              key={index}
+              onClick={() => handleOpenModal(index)}
+              alt=""
+            ></img>
+          );
+        })}
       </div>
-      <BigSecWave1/>
+
+      <Link to={"/Gallery"}>
+        <div onClick={moreImage} className={style.more}>
+          تصاویر بیشتر
+        </div>
+      </Link>
+      <BigSecWave1 />
     </div>
   );
 };

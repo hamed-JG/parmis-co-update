@@ -4,7 +4,7 @@ import Banner from "../Components/About Us/Banner/Banner";
 import Vision from "../Components/About Us/OurVision/Vision";
 import Service from "../Components/About Us/OurServices/Service";
 import InstaBar from "../Components/Shared/Instagram/InstaBar";
-import Gallery from "../Components/About Us/Gallery/Gallery";
+import SmallGallery from "../Components/About Us/Gallery/SmallGallery";
 
 const text = `ما را در اینستاگرام دنبال کنید و تصاویر آخرین پروژه‌های انجام شده را مشاهده فرمایید `;
 
@@ -17,10 +17,9 @@ function Services() {
 
       <Service />
 
-      <Gallery/>
+      <SmallGallery />
 
       <InstaBar text={text} />
-
     </div>
   );
 }

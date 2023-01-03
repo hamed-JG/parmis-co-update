@@ -1,7 +1,7 @@
 import { gql } from "@apollo/client";
 const GET_BLOGS_INFO = gql`
   query {
-    posts {
+    posts (first: 13){
       author {
         name
         avatar {
@@ -51,7 +51,7 @@ const GET_POST_COMMENTS = gql`
 
 const GET_GALLERY_PHOTO = gql`
   query getPhotos {
-    galleries {
+    galleries(first: 20) {
       title
       slug
       photo {

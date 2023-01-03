@@ -19,7 +19,6 @@ const instaText = `
 
 function ABlog() {
   const { slug } = useParams();
-  console.log(slug);
   const navigate = useNavigate();
 
   const { loading, data, errors } = useQuery(GET_POST_INFO, {
