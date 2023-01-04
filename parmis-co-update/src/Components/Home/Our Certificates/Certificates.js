@@ -3,8 +3,11 @@ import React from "react";
 // Style
 import "./Certificates.module.css";
 import style from "./Certificates.module.css";
-import certificate from "../../../Images/certificate.jpg";
-import Certificate from "./ourCertificate/Certificate.js";
+import one from "../../../Images/1.jpg";
+import two from "../../../Images/2.jpg";
+import three from "../../../Images/3.jpg";
+import four from "../../../Images/4.jpg";
+import Certificate from "./ourCertificate/Certificate";
 function Certificates() {
   return (
     <div className={style.container}>
@@ -12,15 +15,15 @@ function Certificates() {
 
         <div className={style.rowFlex}>
 
-        <Certificate image={certificate} title={"گواهینامه EPCS"}/>
+        <Certificate image={one} title={"گواهینامه EPCS"}/>
 
-        <Certificate image={certificate} title={"گواهینامه انجمن گلخانه سازان کشور"}/>
+        <Certificate image={two} title={"گواهینامه انجمن گلخانه سازان کشور"}/>
 
-        <Certificate image={certificate} title={"گواهینامه توزیع نهاده‌های کشاورزی"}/>
+        <Certificate image={three} title={"گواهینامه توزیع نهاده‌های کشاورزی"}/>
 
-        <Certificate image={certificate} title={"گواهینامه تولید محصولات گلخانه‌ای"}/>
+        <Certificate image={four} title={"گواهینامه تولید محصولات گلخانه‌ای"}/>
         
-        <Certificate image={certificate} title={"گواهینامه تولید محصولات گلخانه‌ای"}/>
+        {/* <Certificate image={certificate} title={"گواهینامه تولید محصولات گلخانه‌ای"}/> */}
 
         </div>
 

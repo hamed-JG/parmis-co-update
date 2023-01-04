@@ -1,10 +1,12 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaAlignJustify, FaTimes, FaPhoneAlt } from "react-icons/fa";
 
 import "./Navbar.module.css";
 import style from "./Navbar.module.css";
+
+import logo from "../../../Images/logo.png";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -19,11 +21,11 @@ function Navbar() {
           <li className={style.link}>
             <Link to={"/aboutUs"}>درباره ما</Link>
           </li>
-          {/* <li className={style.link}>
-            <Link to={"/products"}>تجهیزات</Link>
-          </li> */}
           <li className={style.link}>
             <Link to={"/blog"}>مقالات</Link>
+          </li>
+          <li className={style.link}>
+            <Link to={"/gallery"}>تصاویر</Link>
           </li>
           <li className={style.link}>
             <Link to={"/contact"}>تماس با ما</Link>
@@ -31,11 +33,25 @@ function Navbar() {
         </ul>
       </nav>
 
-      <FaBars className={style.menuIcon} onClick={() => setShowMenu(true)} />
+      <FaAlignJustify
+        className={style.menuIcon}
+        onClick={() => setShowMenu(true)}
+      />
+      {/* <FaPhoneAlt style={{width:"50px",height:"25px"}}/> */}
+
+      <Link to={"/"}>
+        <div className={style.logo}>
+          نواندیش پارمیس
+          <img src={logo} alt="home" />
+        </div>
+      </Link>
 
       <div className={showMenu ? style.showHamburgerMenu : style.hamburgerMenu}>
         <div className={style.closeIcon}>
-          <FaTimes onClick={() => setShowMenu(false)} />
+          <FaTimes
+            onClick={() => setShowMenu(false)}
+            style={{ color: "#FFF" }}
+          />
         </div>
 
         <nav>
@@ -45,11 +61,7 @@ function Navbar() {
                 صفحه نخست
               </Link>
             </li>
-            {/* <li className={style.link}>
-              <Link to={"/products"} onClick={() => setShowMenu(false)}>
-                محصولات
-              </Link>
-            </li> */}
+
             <li className={style.link}>
               <Link to={"/aboutUs"} onClick={() => setShowMenu(false)}>
                 درباره ما
@@ -58,6 +70,11 @@ function Navbar() {
             <li className={style.link}>
               <Link to={"/blog"} onClick={() => setShowMenu(false)}>
                 مقالات
+              </Link>
+            </li>
+            <li className={style.link}>
+              <Link to={"/gallery"} onClick={() => setShowMenu(false)}>
+                تصاویر
               </Link>
             </li>
             <li className={style.link}>

@@ -1,6 +1,5 @@
 .container {
-  max-width: 800px;
-  border-radius: 20px;
+  max-width: 100%;
   background-color: rgb(0, 0, 0);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
   color: #fff;
@@ -9,24 +8,25 @@
   background-position: center;
   background-size: cover;
   overflow: hidden;
-  
+  display: flex;
+  justify-content: center;
 }
 .content {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   border-radius: 20px;
   padding: 20px 0;
-  background-color: #ffe9692a;
+  background-color: #f5eec52a;
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
   color: var(--blue);
 }
 .text {
-  width: 35%;
+  width: 70%;
   color: #000;
   filter: drop-shadow(0 3px 2px rgba(255, 255, 255, 0.5));
   font-size: 19px;
-  text-align: justify;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,11 +36,12 @@
     text-decoration: none;
 }
 .btn{
+  width: 250px;
     text-align: center;
     color: #FFF;
     background-color: #3f729b;
     border-radius: 5px;
-    margin-top: 25px;
+    margin: 12px auto;
 }
 .btn:active{
     background-color: #5f97c5;
@@ -54,17 +55,15 @@
 }
 @media (max-width:768px){
   .container{
-    border-radius: 20px;
-    margin:80px 25px;
+    margin:80px 0;
   }
   .content{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 0 ;
   }
   .text{
-    text-align: justify;
+    text-align: center;
     font-size: 15px;
     padding: 20px 0;
     width: 250px;
