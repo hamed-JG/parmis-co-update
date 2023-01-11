@@ -10,14 +10,14 @@ import four from "../../../Images/4.jpg";
 import Certificate from "./ourCertificate/Certificate";
 function Certificates() {
   return (
-    <div className={style.container}>
+    <section className={style.container}>
         <h2>گواهینامه و مهارت‌ها</h2>
 
         <div className={style.rowFlex}>
 
-        <Certificate image={one} title={"گواهینامه EPCS"}/>
+        <Certificate image={one} title={"گواهینامه انجمن گلخانه سازان کشور"}/>
 
-        <Certificate image={two} title={"گواهینامه انجمن گلخانه سازان کشور"}/>
+        <Certificate image={two} title={"گواهینامه EPCS"}/>
 
         <Certificate image={three} title={"گواهینامه توزیع نهاده‌های کشاورزی"}/>
 
@@ -27,7 +27,7 @@ function Certificates() {
 
         </div>
 
-    </div>
+    </section>
   );
 }
 

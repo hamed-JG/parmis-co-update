@@ -8,11 +8,12 @@ import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import ABlog from "./Components/Blog/a Blog/ABlog";
-import Gallery from "./Components/Gallery/Gallery";
+import Gallery from "./pages/Gallery";
 
 import Navbar from "./Components/Shared/Navbar/Navbar";
 import Footer from "./Components/Shared/Footer/Footer";
 import CallToAction from './Components/Shared/Call to action/CallToAction'
+
 
 import ScrollToTop from "./Components/Shared/Tools/ScrollToTop";
 
@@ -45,7 +46,9 @@ function App() {
         </Routes>
 
         <CallToAction/>
+
         <Footer />
+
       </Router>
     </div>
   );

@@ -12,7 +12,7 @@ function InstaBar({ text }) {
       <div className={style.content}>
         <div className={style.instaPic}></div>
         <div className={style.text}>
-          <div>{text}</div>
+          <div className={style.words}>{text}</div>
           <Link onClick={instagram} className={style.link}>
             <div className={style.btn}>Follow</div>
           </Link>

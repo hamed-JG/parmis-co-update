@@ -12,10 +12,11 @@
 .title {
   margin: 0 20px 20px;
   font-size: 16px;
+  cursor: pointer;
 }
 
-@media(max-width:768px){
-  .container{
+@media (max-width: 768px) {
+  .container {
     width: 150px;
   }
   .title {

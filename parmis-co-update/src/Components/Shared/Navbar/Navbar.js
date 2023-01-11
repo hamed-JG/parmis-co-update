@@ -37,7 +37,6 @@ function Navbar() {
         className={style.menuIcon}
         onClick={() => setShowMenu(true)}
       />
-      {/* <FaPhoneAlt style={{width:"50px",height:"25px"}}/> */}
 
       <Link to={"/"}>
         <div className={style.logo}>

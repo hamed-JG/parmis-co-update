@@ -23,14 +23,15 @@
 }
 .content h1 {
   font-size: 40px;
-  margin-bottom: 5px;
-  filter: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.5));
+  margin: 20px auto;
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.5));
 }
-.content h2 {
-  color: #FFF;
+.header2 {
   font-size: 22px;
   font-weight: 500;
-  filter: drop-shadow(0 0px 3px rgba(0, 0, 0, 1.5));
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.473));
+  margin: 20px auto;
+
 }
 .cta {
   background-color: var(--green);

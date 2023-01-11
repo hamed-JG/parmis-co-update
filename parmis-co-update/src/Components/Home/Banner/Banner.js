@@ -9,7 +9,7 @@ function Banner() {
     <section className={style.container}>
       <div className={style.content}>
         <h1>شرکت مهندسی کشاورزی گلخانه سازان نواندیش پارمیس</h1>
-        <h2>راهکاری نوین برای پیشرفت کشاورزی</h2>
+        <h2 className={style.header2}>راهکاری نوین برای پیشرفت کشاورزی</h2>
         <Link to={"/aboutUs"} className={style.cta}>
           درباره راهکار‌ها بیشتر بدانید
         </Link>

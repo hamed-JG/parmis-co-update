@@ -14,7 +14,7 @@ function Banner() {
       <div className={style.layer}>
         <div className={style.content}>
           <h2>مقالات</h2>
-          <p>نقاط عطف کسب و کار، نوآوری های تکنولوژیکی و نکات آموزشی  </p>
+          <p> </p>
         </div>
       </div>
     </div>

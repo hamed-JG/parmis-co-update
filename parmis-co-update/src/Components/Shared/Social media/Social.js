@@ -24,13 +24,13 @@ const linkedIn = () => {
   window.open("https://www.linkedin.com/in/hamed-jahangiri-908643216");
 };
 
-function Social() {
+function Social({width,height}) {
   return (
     <div className={style.container}>
-      <FaWhatsapp onClick={whatsApp} className={style.icon} />
-      <FaInstagram onClick={instagram} className={style.icon} />
-      <FaTelegramPlane onClick={telegram} className={style.icon} />
-      <FaLinkedinIn onClick={linkedIn} className={style.icon} />
+      <FaWhatsapp onClick={whatsApp} className={style.icon} style={{width:`${width}`,height:`${height}`}} />
+      <FaInstagram onClick={instagram} className={style.icon} style={{width:`${width}`,height:`${height}`}}/>
+      <FaTelegramPlane onClick={telegram} className={style.icon} style={{width:`${width}`,height:`${height}`}}/>
+      <FaLinkedinIn onClick={linkedIn} className={style.icon} style={{width:`${width}`,height:`${height}`}}/>
     </div>
   );
 }

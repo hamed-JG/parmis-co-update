@@ -8,6 +8,7 @@ import Experience from "../Components/Home/Experience/Experience";
 import Certificates from "../Components/Home/Our Certificates/Certificates";
 import UnderBanner from "../Components/Home/Under Banner/UnderBanner";
 import InstaBar from "../Components/Shared/Instagram/InstaBar";
+import Phone from "../Components/Shared/phoneBtn/Phone";
 
 
 const instaText = ` ما را در اینستاگرام دنبال کنید تا اولین کسی باشید که از آخرین اخبار
@@ -28,6 +29,7 @@ function Home() {
 
       <HomeBlog />
 
+      <Phone/>
       <InstaBar text={instaText} />
 
     </div>

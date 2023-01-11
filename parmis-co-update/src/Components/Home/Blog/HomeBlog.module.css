@@ -19,3 +19,8 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+@media (max-width:768px){
+  .cardHolder{
+    justify-content: space-evenly;
+  }
+}

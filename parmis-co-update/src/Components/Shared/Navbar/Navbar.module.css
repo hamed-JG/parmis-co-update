@@ -28,12 +28,15 @@
   height: 30px;
   cursor: pointer;
 }
-.logo{
+.logo {
   display: flex;
   align-items: center;
   font-size: 20px;
+  color: #fff;
+  filter: drop-shadow(0 1px 2px rgb(0, 0, 0));
+
 }
-.logo img{
+.logo img {
   width: 60px;
   height: 50px;
 }
@@ -96,12 +99,13 @@
   padding: 0 15px;
 }
 .link > *:hover {
-  /* color: #00a03e; */
   border-radius: 16px;
 }
 
 .link > * {
-  color: #000;
+  color: #fff;
+  filter: drop-shadow(0 1px 2px rgb(0, 0, 0));
+
   text-decoration: none;
 }
 
@@ -119,20 +123,20 @@
     top: 0;
     margin: 15px;
   }
-  .logo{
+  .logo {
     display: flex;
     align-items: center;
     font-size: 20px;
+    padding: 0 20px;
   }
-  .logo img{
+  .logo img {
     width: 60px;
     height: 50px;
   }
   .link {
     padding: 15px;
   }
-  .link >*{
-    color: #FFF;
-
+  .link > * {
+    color: #fff;
   }
 }

@@ -1,11 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 // Style
 import "./Info.module.css";
 import style from "./Info.module.css";
 
 import { FaDirections } from "react-icons/fa";
+
+const location = () => {
+  window.open("https://goo.gl/maps/L7FKNpWKV7Rd1GQM8");
+};
+const location1 = () => {
+  window.open("https://goo.gl/maps/sWa3LSgMp7XNE5H38");
+};
 
 function Info() {
   return (
@@ -16,36 +22,39 @@ function Info() {
         <div>
           تهران - میدان توحید - خیابان نصرت غربی - کوچه کاظم بیگی پلاک 5
         </div>
-        <div style={{ display: "flex" }}>
+
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
           <span>شماره تماس:</span>
-          <Link style={{ direction: "ltr"}}>
-            <span >021 - 66577380</span>
-          </Link>
+          <a href="tel:+982166577380" style={{ direction: "ltr" }}>
+            <span>+98 21 - 66 577 380</span>
+          </a>
         </div>
-        <Link >
-          <div className={style.openMap}>
-            مسیریابی
-            <FaDirections style={{ width: "20px", height: "20px" }} />
-          </div>
-        </Link>
+
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <span>مهندس باغبان:</span>
+          <a href="tel:+989121443811" style={{ direction: "ltr" }}>
+            <span>+98 912 144 38 11</span>
+          </a>
+        </div>
+
+        <div className={style.openMap} onClick={location}>
+          مسیریابی
+          <FaDirections style={{ width: "20px", height: "20px" }} />
+        </div>
       </div>
       <div className={style.part}>
-        <h4>شعبه شماره 1</h4>
-        <div>
-          پاکدشت - فیلستان - روبروی بانک صادرات پلاک 25
-        </div>
-        <div style={{ display: "flex" }}>
+        <h4>شعبه یک </h4>
+        <div>پاکدشت - فیلستان - روبروی بانک صادرات پلاک 25</div>
+        <div style={{ display: "flex", justifyContent: "space-between" }}>
           <span>شماره تماس:</span>
-          <Link style={{ direction: "ltr"}}>
-            <span>021 - 36413455</span>
-          </Link>
+          <a href="tel:+982136413455" style={{ direction: "ltr" }}>
+            <span>+98 21 - 36 413 455</span>
+          </a>
         </div>
-        <Link >
-          <div className={style.openMap}>
-            مسیریابی
-            <FaDirections style={{ width: "20px", height: "20px" }} />
-          </div>
-        </Link>
+        <div className={style.openMap} onClick={location1}>
+          مسیریابی
+          <FaDirections style={{ width: "20px", height: "20px" }} />
+        </div>
       </div>
     </div>
   );

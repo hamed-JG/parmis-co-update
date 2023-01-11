@@ -4,25 +4,25 @@
   justify-content: space-between;
   width: 300px;
   max-width: 400px;
-  max-height: 450px;
   border: 0.5px solid rgba(128, 128, 128, 0.5);
   padding: 20px;
 }
 .header {
-    margin: 0;
+  margin: 0;
+  text-align: center;
 }
 
 .part div {
   padding: 5px;
 }
 .part h4{
-  color: var(--blue);
-  text-decoration: underline;
+  border-bottom: 1px solid gray;
 }
 .openMap {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
   width: 90px;
   background-color: var(--blue);
   color: #fff;

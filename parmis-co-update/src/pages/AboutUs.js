@@ -1,22 +1,28 @@
 import React from "react";
 
-import Banner from "../Components/About Us/Banner/Banner";
 import Vision from "../Components/About Us/OurVision/Vision";
 import Service from "../Components/About Us/OurServices/Service";
 import InstaBar from "../Components/Shared/Instagram/InstaBar";
+import Phone from "../Components/Shared/phoneBtn/Phone";
+import Banner from "../Components/Shared/Banner/Banner";
 
-const text = `ما را در اینستاگرام دنبال کنید و تصاویر آخرین پروژه‌های انجام شده را مشاهده فرمایید `;
+// Image and Text
+import servicesPic from "../Images/farmland.jpg"
+const text = `جدیدترین  تصاویر از آخرین فعالیت تیم نواندیش پارمیس`;
 
 function Services() {
   return (
-    <div>
-      <Banner />
+    <div> 
+      
+      <Banner image={servicesPic} header={"درباره تیم"} text={"توسعه دهنده کشاورزی صنعتی، مجری گلخانه‌های مدرن و ارائه دهنده راهکارهای نوین کشت"}/>
 
       <Vision />
 
       <Service />
 
       <InstaBar text={text} />
+
+      <Phone/>
     </div>
   );
 }

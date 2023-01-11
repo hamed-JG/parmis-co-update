@@ -1,9 +1,10 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
-  padding: 20px;
+  padding: 50px 0 ;
+
 }
 .header {
   display: flex;
@@ -15,7 +16,6 @@
 }
 .headerTitle {
   font-size: 20px;
-
 }
 .backBtn {
   text-align: justify;
@@ -44,31 +44,29 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
 .avatar {
   margin: 5px;
   width: 50px;
   height: 50px;
 }
-.text{
+.text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.text h3 {
+  margin: 0;
+  padding: 0;
+}
 .headerTitle1 {
   font-size: 20px;
-  letter-spacing: 1px;
-  width: 100%;
   max-width: 900px;
-  text-align: right;
-  padding: 20px 0;
+  padding: 20px;
 }
 .contentHolder {
-  width: 100%;
   max-width: 900px;
-
   display: flex;
   flex-direction: column;
   border-radius: 16px;
@@ -82,5 +80,13 @@
   .coverPhoto {
     width: 100%;
     height: 250px;
+    border-radius: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .coverPhoto {
+    width: 100%;
+    height: 450px;
+    border-radius: 0;
   }
 }
