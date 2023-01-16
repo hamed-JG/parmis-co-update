@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaAlignJustify, FaTimes, FaPhoneAlt } from "react-icons/fa";
+import { FaAlignJustify, FaTimes } from "react-icons/fa";
 
 import "./Navbar.module.css";
 import style from "./Navbar.module.css";

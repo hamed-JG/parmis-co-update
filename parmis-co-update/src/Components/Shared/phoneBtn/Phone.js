@@ -9,7 +9,7 @@ const call = () => {};
 
 function Phone() {
   return (
-    <a href="tel:+989121443811">
+    <a href="tel:+982166577380">
       <div className={style.container}>
         <FaPhone className={style.icon} onClick={call} />
       </div>

@@ -4,17 +4,17 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  height: fit-content;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   position: relative;
   padding: 100px;
   margin: 0 auto;
   text-align: justify;
 }
 .content {
-  max-width: 600px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   text-align: justify;
@@ -25,6 +25,9 @@
   font-weight: 500;
   margin-bottom: 30px;
   font-size: 30px;
+}
+.content h3{
+  max-width: 500px;
 }
 
 @media (max-width: 768px) {

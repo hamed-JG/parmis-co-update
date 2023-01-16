@@ -2,18 +2,14 @@ import React from "react";
 
 // Api Graphql
 import ReactDOM from "react-dom/client";
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-} from "@apollo/client";
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
 // Style
 import "./index.css";
 import App from "./App";
 
 const client = new ApolloClient({
-  uri: "https://api-us-west-2.hygraph.com/v2/cla1ikge70yom01ui51ez8eb5/master",
+  uri: process.env.REACT_APP_GRAPHCMS_URI,
   cache: new InMemoryCache(),
 });
 

@@ -1,22 +1,24 @@
 import { gql } from "@apollo/client";
 
-const SEND_COMMENT = gql`
-  mutation sendComment(
+const SEND_FORM = gql`
+  mutation sendForm(
     $name: String!
-    $email: String!
+    $lastName: String!
+    $phoneNumber: String!
     $text: String!
-    $slug: String!
+    $city: String!
   ) {
-    createComment(
+    createForm(
       data: {
         name: $name
-        email: $email
+        lastName: $lastName
+        phoneNumber: $phoneNumber
         text: $text
-        post: { connect: { slug: $slug } }
+        city: $city
       }
     ) {
       id
     }
   }
 `;
-export { SEND_COMMENT };
+export { SEND_FORM };

@@ -12,7 +12,6 @@ import style from  "./HomeBlog.module.css"
 
 const HomeBlog = () => {
   const { loading, data, errors } = useQuery(GET_BLOGS_INFO);
-    console.log(data)
 
   if (loading) return <LoadingSpinner />;
 

@@ -60,7 +60,7 @@ function ABlog() {
         </div>
       </div>
 
-      <h2 className={style.headerTitle1}>{data.post.title}</h2>
+      <h2 className={style.headerTitle}>{data.post.title}</h2>
 
       <div
         className={style.contentHolder}
