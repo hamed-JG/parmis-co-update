@@ -38,23 +38,33 @@ textarea {
 .btn {
   width: 100px;
   background-color: var(--blue);
-  color: #FFF;
+  color: #fff;
   padding: 5px 20px;
   margin: 10px;
   text-align: center;
   cursor: pointer;
 }
+.pressed {
+  width: 100px;
+  background-color: gray;
+  color: #fff;
+  padding: 5px 20px;
+  margin: 20px;
+  text-align: center;
+  cursor: none;
+}
 
-
-    @media(max-width:768px){
-      .container{
-        margin: 150px 0;
-      }
-      .btn{
-        margin:10px 30px;
-      }
-      textarea, input{
-        margin: 10px;
-        width: 300px;
-      }
-    }
+@media (max-width: 768px) {
+  .container {
+    margin: 150px 0;
+  }
+  .btn,
+  .pressed {
+    margin: 10px 30px;
+  }
+  textarea,
+  input {
+    margin: 10px;
+    width: 300px;
+  }
+}

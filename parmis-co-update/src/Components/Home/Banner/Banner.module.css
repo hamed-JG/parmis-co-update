@@ -31,7 +31,6 @@
   font-weight: 500;
   filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.473));
   margin: 20px auto;
-
 }
 .cta {
   background-color: var(--green);
@@ -50,4 +49,8 @@
   background-color: var(--yellow);
 }
 
-
+@media (max-width: 768px) {
+  .content {
+    margin-top: 50px;
+  }
+}

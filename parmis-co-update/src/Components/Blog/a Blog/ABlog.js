@@ -4,9 +4,12 @@ import { useNavigate, useParams } from "react-router-dom";
 import { GET_POST_INFO } from "../../../graphql/queries";
 import sanitizeHtml from "sanitize-html";
 
+// Style
 import "./ABlog.module.css";
 import style from "./ABlog.module.css";
+import { FaAngleLeft } from "react-icons/fa";
 
+// Components
 import LoadingSpinner from "../../Shared/Tools/LoadingSpinner";
 import InstaBar from "../../Shared/Instagram/InstaBar";
 // import CommentsForm from "./comment/From/CommentsForm";
@@ -35,7 +38,7 @@ function ABlog() {
 
         <span className={style.backBtn} onClick={() => navigate(-1)}>
           <span>بازگشت</span>
-          <i className="fa-solid fa-chevron-left"></i>
+          <FaAngleLeft className="fa-solid fa-chevron-left"></FaAngleLeft>
         </span>
       </div>
 

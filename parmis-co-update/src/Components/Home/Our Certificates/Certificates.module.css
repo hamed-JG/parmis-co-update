@@ -9,6 +9,8 @@
 }
 .container h2{
   margin: 40px;
+  font-size: 30px;
+  color: var(--blue);
 }
 .rowFlex{
   display: flex;

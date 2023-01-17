@@ -9,9 +9,8 @@ import SocialBig from "../Components/Shared/Social media/BigIcon/SocialBig";
 
 // Images AND Text
 import contactPic from "../Images/Contact.jpeg"
-const text = `برای پرسیدن سوال، درخواست اطلاعات، یا بیان چالش های کشاورزی خود با
-کارشناسان ما تماس بگیرید.
-تیم ما آماده به اشتراک گذاشتن تجربیات و تخصص ماست.`;
+const text = `
+تیم ما آماده به اشتراک گذاشتن تجربیات و تخصص ما است`;
 
 function Contact() {
   return (

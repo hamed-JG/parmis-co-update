@@ -87,8 +87,8 @@ function ContactForm() {
             onChange={(e) => setText(e.target.value)}
           ></textarea>
         </div>
-        <div className={style.btn} onClick={sendHandler}>
-          ارسال
+        <div className={pressed ? style.pressed : style.btn} onClick={sendHandler}>
+          {pressed ? "در حال ارسال" : "ارسال"}
         </div>
         <ToastContainer
           position="top-center"

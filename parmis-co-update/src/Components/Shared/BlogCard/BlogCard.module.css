@@ -23,7 +23,7 @@
 .cardCover {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  width: 350px;
+  width: 340px;
   height: 200px;
 }
 .author {
@@ -61,8 +61,8 @@
 }
 
 
-@media(max-width:768px){
+/* @media(max-width:768px){
   .container{
-    margin: 15px 0;
+    
   }
-}
+} */

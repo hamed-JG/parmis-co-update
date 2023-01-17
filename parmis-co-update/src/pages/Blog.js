@@ -22,15 +22,13 @@ function Blog() {
       <Banner
         image={blogPic}
         header={"آخرین مقالات"}
-        text={"نقاط عطف کسب و کار، نوآوری های علمی و نکات آموزشی "}
-        
+        text={"نقاط عطف کسب و کار، نوآوری های علمی و آموزشی "}
       />
       <div
         style={{
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          maxWidth: "1400px",
           margin: "50px auto",
         }}
       >

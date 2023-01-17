@@ -15,7 +15,7 @@ function LoadingSpinner() {
         height="80"
         width="80"
         radius="9"
-        color="#375c95"
+        color="#000000"
         ariaLabel="three-dots-loading"
         wrapperStyle={{}}
         wrapperClassName=""

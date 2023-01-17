@@ -13,7 +13,7 @@
 
 .boldText {
   max-width: 600px;
-  text-align: justify;
+  text-align: center;
   padding: 20px;
   border-radius: 40px;
   font-size: 18px;
@@ -56,7 +56,6 @@
     margin: 40px auto;
   }
   .boldText {
-    text-align: justify;
     margin: 0 auto;
     width: 80%;
   }

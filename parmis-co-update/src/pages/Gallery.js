@@ -6,7 +6,7 @@ import Banner from "../Components/Shared/Banner/Banner";
 
 // Images AND Text
 import galleryPic from "../Images/gallery.jpeg";
-const text = `آخرین پروژه‌‌ها، نمای داخلی گلخانه و تجهیزات آنها`
+const text = `آخرین پروژه‌‌ها، نمای داخلی گلخانه و تجهیزات`
 
 
 

@@ -1,23 +1,18 @@
 import React from "react";
-
+import "./Wave.module.css"
+import style from "./Wave.module.css"
 function Wave() {
   return (
     <svg
-    style={{
-        position: "absolute",
-        bottom: "-2",
-        width: "100%",
-        height: "65px",
-        zIndex: "4",
-    }}
+    className={style.container}
       xmlns="http://www.w3.org/2000/svg"
-      width="1152"
+      width="1151"
       height="64"
-      viewBox="0 0 1152 64"
+      viewBox="0 0 1151 64"
       preserveAspectRatio="none"
     >
       <rect
-        width="1152"
+        width="1151"
         height="100%"
         fill="#ffffff"
         clipPath="url(#about-us-hero-clip)"

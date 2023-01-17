@@ -5,9 +5,8 @@ function BigBackgroundWave() {
     <svg
       style={{
         position: "absolute",
-        top: "-2px",
-        left: "0",
-        width: "101%",
+        top: "-2",
+        width: "100%",
         height: "45px",
         zIndex: "3",
       }}
@@ -27,7 +26,7 @@ function BigBackgroundWave() {
         <path
           id="Path_13"
           data-name="Path 13"
-          d="M 0 29 c 0 -82.5 1152 40.5 1152 10 v -39 h -1152 Z"
+          d="M 0 27 c 0 -62.5 1152 41.5 1152 10 v -39 h -1152 Z"
           fill="#ffffff"
         ></path>
       </clipPath>
