@@ -51,7 +51,7 @@ const GET_POST_COMMENTS = gql`
 
 const GET_GALLERY_PHOTO = gql`
   query getPhotos {
-    galleries(first: 20) {
+    galleries(first: 98) {
       title
       slug
       photo {

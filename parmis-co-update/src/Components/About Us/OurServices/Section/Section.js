@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./Section.module.css";
 import style from "./Section.module.css";
 
-function Section({ rowAlign, image, title, text, altText }) {
+function Section({ rowAlign, image, title, text, altText, target }) {
   return (
     <div className={style.container} style={rowAlign}>
       <div className={style.photo}>
@@ -13,7 +13,7 @@ function Section({ rowAlign, image, title, text, altText }) {
       <div className={style.content}>
         <h2>{title}</h2>
         <p>{text}
-        <Link to={"/blog/spanish-greenhouse"}>
+        <Link className={style.linkTo} to={`${target}`}>
         مقالات مرتبط
         </Link></p>
         <p>{altText}

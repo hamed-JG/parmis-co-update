@@ -12,7 +12,7 @@ function Experience() {
       <ExpWave />
       <ExperienceIcons />
       <div className={style.content}>
-        <h2>تجربیات و دستاوردها</h2>
+        <h2>خدمات و اهداف</h2>
         <h3>
           نواندیش پارمیس در موقعیتی منحصر به فرد قرار دارد و رسیدگی به افق‌های پیش
           رو مانند :

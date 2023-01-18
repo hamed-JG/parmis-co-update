@@ -11,7 +11,7 @@ import create from "../../../../Images/create.png";
 import upgrade from "../../../../Images/upgrade.png";
 import plant from "../../../../Images/plant.png";
 import takeCare from "../../../../Images/takeCare.png";
-import chart from "../../../../Images/UpArrow.png";
+import water from "../../../../Images/saveWater.png";
 import increase from "../../../../Images/increase.png";
 import payment from "../../../../Images/payment.png";
 import stable from "../../../../Images/stable.png";
@@ -20,12 +20,7 @@ function ExperienceIcons(image) {
   return (
     <div className={style.container}>
 
-      {/* <Link className={style.link} to={"/"}>
-        <div className={style.icons}>
-          <img className={style.icon} src={design} alt={"icon"} />
-          <p className={style.text}>طراحی</p>
-        </div>
-      </Link> */}
+      
       <Link className={style.link} to={"/"}>
         <div className={style.icons}>
           <img className={style.icon} src={create} alt={"icon"} />
@@ -50,30 +45,37 @@ function ExperienceIcons(image) {
           <p className={style.text}>نگهداری محصول</p>
         </div>
       </Link>
-      {/* <Link className={style.link} to={"/"}>
+      <Link className={style.link} to={"/"}>
         <div className={style.icons}>
-          <img className={style.icon} src={chart} alt={"icon"} />
-          <p className={style.text}>افزایش تولید</p>
+          <img className={style.icon} src={water} alt={"icon"} />
+          <p className={style.text}>ذخیره منابع حیاتی</p>
         </div>
-      </Link> */}
+      </Link>
+      <Link className={style.link} to={"/"}>
+        <div className={style.icons}>
+          <img className={style.icon} src={stable} alt={"icon"} />
+          <p className={style.text}>خودکفایی ملی</p>
+        </div>
+      </Link>
+      <Link className={style.link} to={"/"}>
+        <div className={style.icons}>
+          <img className={style.icon} src={design} alt={"icon"} />
+          <p className={style.text}>بازار نامحدود</p>
+        </div>
+      </Link>
       <Link className={style.link} to={"/"}>
         <div className={style.icons}>
           <img className={style.icon} src={increase} alt={"icon"} />
           <p className={style.text}>افزایش درآمد</p>
         </div>
       </Link>
-      {/* <Link className={style.link} to={"/"}>
-        <div className={style.icons}>
-          <img className={style.icon} src={payment} alt={"icon"} />
-          <p className={style.text}>امنیت سرمایه</p>
-        </div>
-      </Link> */}
       <Link className={style.link} to={"/"}>
         <div className={style.icons}>
-          <img className={style.icon} src={stable} alt={"icon"} />
-          <p className={style.text}>فعالیت پایدار</p>
+          <img className={style.icon} src={payment} alt={"icon"} />
+          <p className={style.text}>صادرات محصول</p>
         </div>
       </Link>
+      
     </div>
   );
 }

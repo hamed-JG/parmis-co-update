@@ -25,15 +25,15 @@ function Service() {
     <div>
       <h2 id="solutions" className={style.header}>خدمات اصلی</h2>
 
-      <Section image={Structure} rowAlign={{ flexDirection: "row" }} title={firstTitle} text={firstText} altText={firstAlt}/>
+      <Section target={"/blog/greenhouse-structure"} image={Structure} rowAlign={{ flexDirection: "row" }} title={firstTitle} text={firstText} altText={firstAlt}/>
 
-      <Section image={equipment} rowAlign={{ flexDirection: "row-reverse" }} title={secondTitle} text={secondText} altText={secondAlt} />
+      <Section target={"/blog/greenhouse-equipment"} image={equipment} rowAlign={{ flexDirection: "row-reverse" }} title={secondTitle} text={secondText} altText={secondAlt} />
 
       <Benefit />
 
-      <Section image={whatFarm} rowAlign={{ flexDirection: "row" }} title={thirdTitle} text={thirdText} altText={thirdAlt}/>
+      <Section target={"/blog/choose-corp"} image={whatFarm} rowAlign={{ flexDirection: "row" }} title={thirdTitle} text={thirdText} altText={thirdAlt}/>
 
-      <Section image={care} rowAlign={{ flexDirection: "row-reverse" }} title={fourthTitle} text={fourthText} altText={fourthAlt}/>
+      <Section target={"/blog/plant-care"} image={care} rowAlign={{ flexDirection: "row-reverse" }} title={fourthTitle} text={fourthText} altText={fourthAlt}/>
     </div>
   );
 }
