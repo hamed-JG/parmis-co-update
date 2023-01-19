@@ -3,4 +3,11 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/jpifpnyz/public_html/
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp asset-manifest.json $DEPLOYPATH
+    - /bin/cp manifest.json $DEPLOYPATH
+    - /bin/cp robots.txt.json $DEPLOYPATH
+    - /bin/cp static $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
+    - /bin/cp favicon.ico $DEPLOYPATH
+    - /bin/cp logo192.png $DEPLOYPATH
+    - /bin/cp logo512.png $DEPLOYPATH
