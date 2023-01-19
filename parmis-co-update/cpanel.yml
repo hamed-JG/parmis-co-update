@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/example/public_html/
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
+    - export https://github.com/hamed-JG/parmis-co-update.git=/home/example/public_html/
+    - /bin/cp index.html $https://github.com/hamed-JG/parmis-co-update.git
+    - /bin/cp style.css $https://github.com/hamed-JG/parmis-co-update.git
