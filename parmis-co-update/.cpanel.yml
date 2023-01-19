@@ -5,7 +5,7 @@ deployment:
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp asset-manifest.json $DEPLOYPATH
     - /bin/cp manifest.json $DEPLOYPATH
-    - /bin/cp robots.txt.json $DEPLOYPATH
+    - /bin/cp robots.txt. $DEPLOYPATH
     - /bin/cp static $DEPLOYPATH
     - /bin/cp .htaccess $DEPLOYPATH
     - /bin/cp favicon.ico $DEPLOYPATH
